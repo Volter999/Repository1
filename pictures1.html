@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Flexbox Pictures row</title>
+<style>
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+li {
+  height: 40vh;
+  flex-grow: 1;
+  list-style-type: none; 
+}
+li:last-child {
+  // There's no science in using "10" here. In all my testing, this delivered the best results.
+  flex-grow: 10;
+}
+img {
+  max-height: 220px;
+  min-width: 300px;
+  object-fit: cover;
+  vertical-align: bottom;
+}
+</style>
+</head>
+<body>
+    <ul>
+        <li>
+          <img src="https://rukminim1.flixcart.com/image/312/312/klwmufk0/painting/5/t/d/20-pt007-janki-original-imagyxczkhc2haf5.jpeg?q=70" alt="A Toyota Previa covered in graffiti" loading="lazy">
+        </li>
+        <li>
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSc5e9bJ0s4MGJZj2U8WoB2HUPWGoNalLzQLw&usqp=CAU" alt="Interesting living room light through a window" loading="lazy">
+        </li>
+        <li>
+          <img src="https://www.hindugodwallpaper.com/images/gods/zoom/1028_radha-krishna-raslila-wallpaper.jpg" alt="Sara on a red bike" loading="lazy">
+        </li>
+    </ul>
+</body>
+</html>
